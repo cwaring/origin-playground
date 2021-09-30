@@ -18,28 +18,21 @@ The production build uses [rollup](https://rollupjs.org/guide/en/) to generate a
 
 We will extend the [vite/rollup plugin architecture](https://vitejs.dev/guide/api-plugin.html) to provide a selection of essential web3 tools/apis for the purpose of plug and play integration with web3 wallets, storage, distributed identity along with other general ui/design productivity frameworks.
 
-## Core Features 
+## Included Core Features 
 - [Vite 2.x](https://vitejs.dev/) with [Vue 3](https://v3.vuejs.org/) & [Typescript](https://www.typescriptlang.org/)
 - Auto component importing ([`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components))
 - File based routing ([`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages))
 - Layout sub-system ([`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts))
 - IPFS Base (auto gateway detection) [`ipfs-base`](https://github.com/cwaring/ipfs-base)
-- ARG ESLint config (with Prettier) ([`.eslintrc.js`](.eslintrc.js))
+- ARG ESLint config (with Prettier) ([`@app-research/eslint-config`](https://github.com/application-research/eslint-config))
 - Server Side Page Generation [`vite-ssg`](https://github.com/antfu/vite-ssg)
 - Metadata rendering with [`@vueuse/head`](https://github.com/vueuse/head)
-- i18n //TODO
-- Markdown pages/imports //TODO
-
-## Testing
-- [Playwright](https://playwright.dev/) (e2e) //TODO
 
 ## Vue Plugins
 - Pinia store with modules [`origin-plugin-pinia`](./src/plugins/pinia/index.ts)
-- Distributed identity provider //TODO [#6](https://github.com/application-research/origin/issues/6)
-- Offline first database //TODO
-## Vite Plugins
-- Tailwind 2.x //TODO
 
+## Included plugins
+- VueUse utility library [`@vueuse/core`](https://vueuse.org/)
 ---
 
 ## Development
