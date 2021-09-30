@@ -1,0 +1,20 @@
+{
+  "name": "o-playground-app",
+  "private": true,
+  "version": "0.3.0-beta.1",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "origin dev",
+    "build": "origin build",
+    "preview": "origin preview",
+    "lint": "eslint 'src/**' --fix"
+  },
+  "devDependencies": {
+    "@app-research/origin-vue": "^0.3.0-beta.3"
+  },
+  "prettier": "@app-research/origin-vue/config/prettier",
+  "engines": {
+    "npm": ">=7",
+    "node": ">=14"
+  }
+}
