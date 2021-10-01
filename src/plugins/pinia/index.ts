@@ -1,14 +1,9 @@
 import { createPinia } from 'pinia'
-import { OriginPlugin as OriginPluginSetup } from '@app-research/origin-vue'
+import { definePlugin } from '@app-research/origin-vue'
 import { useMainStore } from '@/store/main'
 
-interface OriginPlugin {
-  name: string
-  load: OriginPluginSetup
-}
-
-const plugin = (): OriginPlugin => ({
-  name: 'origin-pina',
+const plugin = definePlugin({
+  name: 'origin-plugin-pina',
   load: ({ app, router, initialState }) => {
     const pinia = createPinia()
     app.use(pinia)
