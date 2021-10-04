@@ -1,10 +1,9 @@
 import { createPinia } from 'pinia'
 import { definePlugin } from '@app-research/origin-vue'
-import { useMainStore } from '@/store/main'
 
-const plugin = definePlugin({
-  name: 'origin-plugin-pina',
-  load: ({ app, router, initialState }) => {
+export default definePlugin({
+  name: 'pinia',
+  load: ({ app, initialState }) => {
     const pinia = createPinia()
     app.use(pinia)
 
@@ -13,15 +12,7 @@ const plugin = definePlugin({
       initialState.pinia = pinia.state.value
     } else {
       // on the client side, we restore the state
-      pinia.state.value = initialState?.pinia || {}
+      pinia.state.value = initialState.pinia || {}
     }
-
-    router.beforeEach((to, from, next) => {
-      const store = useMainStore(pinia)
-      store.initialize()
-      next()
-    })
   }
 })
-
-export default plugin
