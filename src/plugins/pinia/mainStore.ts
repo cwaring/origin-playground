@@ -1,6 +1,6 @@
 import { definePlugin } from '@app-research/origin-vue'
 import pinia from './instance'
-import { useMainStore } from '@/store/main'
+import { useMainStore } from '@/stores/main'
 
 export default definePlugin({
   name: 'pinia-mainstore',

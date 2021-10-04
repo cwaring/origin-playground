@@ -32,7 +32,7 @@
 
 <script lang="ts" setup>
 import { storeToRefs } from 'pinia'
-import { useMainStore } from '@/store/main'
+import { useMainStore } from '@/stores/main'
 
 // use the mainStore
 const store = useMainStore()
