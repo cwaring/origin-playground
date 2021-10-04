@@ -28,8 +28,8 @@ We will extend the [vite/rollup plugin architecture](https://vitejs.dev/guide/ap
 - Server Side Page Generation [`vite-ssg`](https://github.com/antfu/vite-ssg)
 - Metadata rendering with [`@vueuse/head`](https://github.com/vueuse/head)
 
-## Vue Plugins
-- Pinia store with modules [`origin-plugin-pinia`](./src/plugins/pinia/index.ts)
+## Origin Vue Plugins
+- [Pinia](https://pinia.esm.dev/) store with SSG state serialization [`origin-plugin-pinia`](./src/plugins/pinia/index.ts)
 
 ## Included plugins
 - VueUse utility library [`@vueuse/core`](https://vueuse.org/)
