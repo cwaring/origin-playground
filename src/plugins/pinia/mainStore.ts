@@ -1,4 +1,5 @@
 import { definePlugin } from '@app-research/origin-vue'
+import pinia from './instance'
 import { useMainStore } from '@/store/main'
 
 export default definePlugin({
@@ -7,7 +8,7 @@ export default definePlugin({
     // example:
     // init and use the mainStore before each route
     router.beforeEach((to, from, next) => {
-      const store = useMainStore()
+      const store = useMainStore(pinia)
       store.initialize()
       next()
     })

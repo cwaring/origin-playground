@@ -1,10 +1,9 @@
-import { createPinia } from 'pinia'
 import { definePlugin } from '@app-research/origin-vue'
+import pinia from './instance'
 
 export default definePlugin({
   name: 'pinia',
   load: ({ app, initialState }) => {
-    const pinia = createPinia()
     app.use(pinia)
 
     if (import.meta.env.SSR) {
