@@ -11,7 +11,7 @@ See: https://github.com/application-research/origin for more info and features.
 ### Getting started
 ```sh
 # init a local repo
-npmx degit application-research/origin-playground
+npx degit application-research/origin-playground origin-app
 ```
 
 ### Development
