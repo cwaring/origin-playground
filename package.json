@@ -10,7 +10,7 @@
     "lint": "eslint 'src/**' --fix"
   },
   "devDependencies": {
-    "@app-research/origin-vue": "^0.3.0-beta.8"
+    "@app-research/origin-vue": "^0.3.0-beta.10"
   },
   "prettier": "@app-research/origin-vue/config/prettier",
   "engines": {
